@@ -1,11 +1,58 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #d3d2da;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Styles for screens smaller than 480px (e.g., small phones) */
+@media (max-width: 480px) {
+  /* body {
+    font-size: 14px;
+  } */
 }
+
+#vbg_proj {
+  filter: blur(5px);
+  width: 100%;
+  height: auto;
+}   
+
+header {
+  background-color: #000000;
+  width: 100%;
+  height: 160px;
+}
+
+.nav_design {
+  position: absolute;
+  display: flex;
+  top: -230px;
+  width: 100%;
+  height: 600px;
+  object-fit: contain;
+  z-index: 2;
+  opacity: 1.0;
+}
+
+.nav_layout {
+  position: absolute;
+  display: flex;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  justify-content: space-around;
+  width: 40%;
+  top: 45px;
+  left: 400px;
+  padding: 2px;
+  z-index: 3; /* Ensure it is above other content */
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,26 +60,78 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.project_list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* h1 {
+  top: 200px;
+  font-size: xx-large;
   color: white;
+  text-shadow: 2px 2px 4px #000000;
+} */
+
+.projects_card {
+  flex-shrink: 1;
+  position: relative;
+  padding: 20px;
+  border-width: 1px;
+  background-color: rgba(0, 255, 255, 0.17);
+  border-style: solid;
+  border-color: #ffffff;
+  height: auto;
+  width: auto;
+  border-radius: 15px;
+  margin: 10px;}
+
+.project_page {
+  position: absolute;
 }
 
-.App-link {
-  color: #61dafb;
+.project_slots {
+  background-color: #00000033;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  z-index: 4;
+  opacity: 1.0;
+  top: 0px;
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+about_page {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  padding: 40px;
+  background-color: #1a1a1a;
+  color: white;
+ 
 }
+
+#sec {
+  width: 100%;
+  border-radius: 15px;
+  padding: 20px;
+  height: 100px;
+  width: 100px;
+  background-color: #b84545;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.avatar_pic {
+  flex-grow: 1;
+}
+
+li {
+  text-decoration: none;
+}
+

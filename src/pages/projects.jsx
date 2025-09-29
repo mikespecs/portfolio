@@ -28,45 +28,44 @@ justifyContent: 'center',
     zIndex: 1,
     objectFit: 'cover',
     opacity: 0.8,
-
-    },
+     },
 }
 
 const projects = [
   {
     title: "Oronym Crack",
-    description: "An interactive flight route planner for pilots.",
+    description: "A mobile app about solving oronym riddles",
     tech: "Microstudio",
-    features: ["Live map routing", "Weather overlays", "User authentication"],
+    features: ["Riddle challenges", "Hint system", "Leaderboard"],
     github: "N/A",
     img_src: Oronym,
-    demo: "https://flightpath-demo.vercel.app",
+    demo: "N/A",
     role: "Solo developer",
-    challenges: "Integrating real-time weather APIs",
-    future: "Add 3D terrain visualization",
+    challenges: "Implementing real-time multiplayer",
+    future: "Add more riddle packs",
   },
 
 {
     title: "untitled",
-    description: "An interactive flight route planner for pilots.",
-    tech: "React, Leaflet, Firebase",
-    features: ["Live map routing", "Weather overlays", "User authentication"],
-    github: "https://github.com/yourusername/flightpath",
+    description: "A mobile game about a mech suit",
+    tech: "Microstudio",
+    features: ["3D graphics", "Physics-based gameplay", "Multiple levels"],
+    github: "N/A",
     img_src: exosuit,
     demo: "https://flightpath-demo.vercel.app",
     role: "Solo developer",
-    challenges: "Integrating real-time weather APIs",
-    future: "Add 3D terrain visualization",
+    challenges: "Implementing real-time multiplayer",
+    future: "Add more maps and animations",
   },
 
   {
     title: "Truth & Company",
-    description: "An interactive flight route planner for pilots.",
+    description: "Distributing",
     tech: "React, Leaflet, Firebase",
-    features: ["Live map routing", "Weather overlays", "User authentication"],
-    github: "https://github.com/yourusername/flightpath",
+    features: ["PDF generation", "User authentication", "Data visualization"],
+    github: "N/A",
     img_src: Tru,
-    demo: "https://flightpath-demo.vercel.app",
+    demo: "N/A",
     role: "Solo developer",
     challenges: "Integrating real-time weather APIs",
     future: "Add 3D terrain visualization",
@@ -74,10 +73,10 @@ const projects = [
 
   {
     title: "Ourdraw",
-    description: "An interactive flight route planner for pilots.",
+    description: "Non Profit Raffle Hub",
     tech: "React, Leaflet, Firebase",
-    features: ["Live map routing", "Weather overlays", "User authentication"],
-    github: "https://github.com/yourusername/flightpath",
+    features: ["Raffle management", "Payment integration", "User profiles"],
+    github: "https://ourdraw-production.vercel.app",
     img_src: Ourdraw,
     demo: "https://flightpath-demo.vercel.app",
     role: "Solo developer",
@@ -101,8 +100,7 @@ const [videoSrc, setVideoSrc] = useState(dragon);
   }, []);
 
  return(
-    <div className="project_page">
-        {/* <h1>Projects Page</h1> */}
+    <div>
         <video
         src={videoSrc}
         autoPlay

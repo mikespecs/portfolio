@@ -1,3 +1,21 @@
+# Project title and description
+My Portfolio Website for Topics in AI 2025
+
+# Preview Screenshots 
+![plot](./directory_1/directory_2/.../directory_n/plot.png)
+
+# Setup and installation instructions
+Have Node.js installed (includes npm)
+
+## Download from nodejs.org
+
+Open the project in a code editor (e.g. VS Code)
+
+(Not yet optimized for mobile) 
+# Set screen settings for now
+## screen width = 1536
+## screen height = 864
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +86,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Technologies used
+React Router DOM 
+## Features implemented
+useState, useEffect (real time loading)
+## Known issues or limitations
+possible mobile screen size misalignment
+## Future enhancements planned
+
+

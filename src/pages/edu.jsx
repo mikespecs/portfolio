@@ -1,12 +1,14 @@
 import React from "react";
-
+import edu from '../assets/edu.png';
 
 function Education() {
+
+  const screenWidth = window.screen.width;
+  const screenHeight = window.screen.height;
   return (
-    <div>
-      <h2 className="">Education</h2>
-      <p className="">B.S. in Computer Science, Champlain College</p>
-      <p className="">Expected Graduation: December 2025</p>
+    <div style={{display: 'flex', marginTop: '40px', justifyContent: 'center', alignItems: 'center', gap: '20px'}}>
+      <img src={edu} alt="Education" style={{ borderRadius: '3%', maxWidth: '60%', height: 'auto' }} />
+      <div style={{ height: 'auto', marginLeft: '20px', borderRadius: '3%', padding: '20px', fontFamily: 'Arial, sans-serif', backgroundColor: "#bb5454ff" , maxWidth: '40%', fontSize: '16px', color: '#ffffffff' }}>
       <h3 className="">Relevant Coursework</h3>
       <ul className="">
         <li>Data Structures & Algorithms</li>
@@ -23,6 +25,7 @@ function Education() {
         <li>Google Data Analytics Certificate</li>
         <li>AWS Cloud Practitioner</li>
       </ul>
+      </div>
       </div>
   );
 }

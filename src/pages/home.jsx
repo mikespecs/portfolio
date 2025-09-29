@@ -6,9 +6,13 @@ import clouds from '../assets/video.mp4';
 function Home() {
   const styles = {
     container: {
-      position: 'absolute', // or 'absolute' if needed
+      position: 'absolute', 
+      display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
       width: '100%',
-      top: '120px',
+      top: '50px',
       fontFamily: 'Arial, sans-serif',
       padding: '40px',
       minHeight: '100vh',

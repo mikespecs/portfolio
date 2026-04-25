@@ -7,7 +7,7 @@ import Education from './pages/edu.jsx';
 import Experience from './pages/experience.jsx';
 import Projects from './pages/projects.jsx';
 import Home from './pages/home.jsx';
-import Skills from './pages/skills.jsx';
+import Addt from './pages/addt.jsx';
 import Nav from './components/header.jsx';
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         <Nav/>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/skills" element={<Skills />} />
+          <Route path="/addt" element={<Addt />} />
           <Route path="/about" element={<About />} />
           <Route path="/edu" element={<Education />} />
           <Route path="/exp" element={<Experience />} />

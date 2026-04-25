@@ -1,0 +1,445 @@
+{
+  "numeric": [
+    "Age",
+    "BMI",
+    "AlcoholConsumption",
+    "PhysicalActivity",
+    "DietQuality",
+    "SleepQuality",
+    "SystolicBP",
+    "DiastolicBP",
+    "CholesterolTotal",
+    "CholesterolLDL",
+    "CholesterolHDL",
+    "CholesterolTriglycerides",
+    "MMSE",
+    "FunctionalAssessment",
+    "ADL"
+  ],
+  "categorical": [
+    "Gender",
+    "Ethnicity",
+    "EducationLevel",
+    "Smoking",
+    "FamilyHistoryAlzheimers",
+    "CardiovascularDisease",
+    "Diabetes",
+    "Depression",
+    "HeadInjury",
+    "Hypertension",
+    "MemoryComplaints",
+    "BehavioralProblems",
+    "Confusion",
+    "Disorientation",
+    "PersonalityChanges",
+    "DifficultyCompletingTasks",
+    "Forgetfulness"
+  ],
+  "numeric_imputation": {
+    "Age": 75.0,
+    "BMI": 27.91208155,
+    "AlcoholConsumption": 9.995191575,
+    "PhysicalActivity": 4.733116167,
+    "DietQuality": 5.160431255,
+    "SleepQuality": 7.117036255,
+    "SystolicBP": 133.0,
+    "DiastolicBP": 91.0,
+    "CholesterolTotal": 225.2349432,
+    "CholesterolLDL": 123.4307389,
+    "CholesterolHDL": 58.90731359,
+    "CholesterolTriglycerides": 231.3947582,
+    "MMSE": 14.43144914,
+    "FunctionalAssessment": 5.173890959,
+    "ADL": 5.026306087
+  },
+  "numeric_ranges_train": {
+    "Age": {
+      "min": 60.0,
+      "max": 90.0
+    },
+    "BMI": {
+      "min": 15.00885118,
+      "max": 39.98851283
+    },
+    "AlcoholConsumption": {
+      "min": 0.002003099,
+      "max": 19.98929336
+    },
+    "PhysicalActivity": {
+      "min": 0.003616017,
+      "max": 9.987429413
+    },
+    "DietQuality": {
+      "min": 0.00938472,
+      "max": 9.998345679
+    },
+    "SleepQuality": {
+      "min": 4.00262866,
+      "max": 9.999840317
+    },
+    "SystolicBP": {
+      "min": 90.0,
+      "max": 179.0
+    },
+    "DiastolicBP": {
+      "min": 60.0,
+      "max": 119.0
+    },
+    "CholesterolTotal": {
+      "min": 150.0933156,
+      "max": 299.9599914
+    },
+    "CholesterolLDL": {
+      "min": 50.23070656,
+      "max": 199.9656651
+    },
+    "CholesterolHDL": {
+      "min": 20.00343401,
+      "max": 99.98032408
+    },
+    "CholesterolTriglycerides": {
+      "min": 50.40719362,
+      "max": 399.8543217
+    },
+    "MMSE": {
+      "min": 0.005312146,
+      "max": 29.99138056
+    },
+    "FunctionalAssessment": {
+      "min": 0.000459594,
+      "max": 9.992609579
+    },
+    "ADL": {
+      "min": 0.001287928,
+      "max": 9.999747122
+    }
+  },
+  "categorical_vocabulary": {
+    "Gender": [
+      0,
+      1
+    ],
+    "Ethnicity": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "EducationLevel": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "Smoking": [
+      0,
+      1
+    ],
+    "FamilyHistoryAlzheimers": [
+      0,
+      1
+    ],
+    "CardiovascularDisease": [
+      0,
+      1
+    ],
+    "Diabetes": [
+      0,
+      1
+    ],
+    "Depression": [
+      0,
+      1
+    ],
+    "HeadInjury": [
+      0,
+      1
+    ],
+    "Hypertension": [
+      0,
+      1
+    ],
+    "MemoryComplaints": [
+      0,
+      1
+    ],
+    "BehavioralProblems": [
+      0,
+      1
+    ],
+    "Confusion": [
+      0,
+      1
+    ],
+    "Disorientation": [
+      0,
+      1
+    ],
+    "PersonalityChanges": [
+      0,
+      1
+    ],
+    "DifficultyCompletingTasks": [
+      0,
+      1
+    ],
+    "Forgetfulness": [
+      0,
+      1
+    ]
+  },
+  "final_feature_order": [
+    {
+      "source": "Age",
+      "kind": "numeric"
+    },
+    {
+      "source": "BMI",
+      "kind": "numeric"
+    },
+    {
+      "source": "AlcoholConsumption",
+      "kind": "numeric"
+    },
+    {
+      "source": "PhysicalActivity",
+      "kind": "numeric"
+    },
+    {
+      "source": "DietQuality",
+      "kind": "numeric"
+    },
+    {
+      "source": "SleepQuality",
+      "kind": "numeric"
+    },
+    {
+      "source": "SystolicBP",
+      "kind": "numeric"
+    },
+    {
+      "source": "DiastolicBP",
+      "kind": "numeric"
+    },
+    {
+      "source": "CholesterolTotal",
+      "kind": "numeric"
+    },
+    {
+      "source": "CholesterolLDL",
+      "kind": "numeric"
+    },
+    {
+      "source": "CholesterolHDL",
+      "kind": "numeric"
+    },
+    {
+      "source": "CholesterolTriglycerides",
+      "kind": "numeric"
+    },
+    {
+      "source": "MMSE",
+      "kind": "numeric"
+    },
+    {
+      "source": "FunctionalAssessment",
+      "kind": "numeric"
+    },
+    {
+      "source": "ADL",
+      "kind": "numeric"
+    },
+    {
+      "source": "Gender",
+      "kind": "onehot",
+      "category": 0
+    },
+    {
+      "source": "Gender",
+      "kind": "onehot",
+      "category": 1
+    },
+    {
+      "source": "Ethnicity",
+      "kind": "onehot",
+      "category": 0
+    },
+    {
+      "source": "Ethnicity",
+      "kind": "onehot",
+      "category": 1
+    },
+    {
+      "source": "Ethnicity",
+      "kind": "onehot",
+      "category": 2
+    },
+    {
+      "source": "Ethnicity",
+      "kind": "onehot",
+      "category": 3
+    },
+    {
+      "source": "EducationLevel",
+      "kind": "onehot",
+      "category": 0
+    },
+    {
+      "source": "EducationLevel",
+      "kind": "onehot",
+      "category": 1
+    },
+    {
+      "source": "EducationLevel",
+      "kind": "onehot",
+      "category": 2
+    },
+    {
+      "source": "EducationLevel",
+      "kind": "onehot",
+      "category": 3
+    },
+    {
+      "source": "Smoking",
+      "kind": "onehot",
+      "category": 0
+    },
+    {
+      "source": "Smoking",
+      "kind": "onehot",
+      "category": 1
+    },
+    {
+      "source": "FamilyHistoryAlzheimers",
+      "kind": "onehot",
+      "category": 0
+    },
+    {
+      "source": "FamilyHistoryAlzheimers",
+      "kind": "onehot",
+      "category": 1
+    },
+    {
+      "source": "CardiovascularDisease",
+      "kind": "onehot",
+      "category": 0
+    },
+    {
+      "source": "CardiovascularDisease",
+      "kind": "onehot",
+      "category": 1
+    },
+    {
+      "source": "Diabetes",
+      "kind": "onehot",
+      "category": 0
+    },
+    {
+      "source": "Diabetes",
+      "kind": "onehot",
+      "category": 1
+    },
+    {
+      "source": "Depression",
+      "kind": "onehot",
+      "category": 0
+    },
+    {
+      "source": "Depression",
+      "kind": "onehot",
+      "category": 1
+    },
+    {
+      "source": "HeadInjury",
+      "kind": "onehot",
+      "category": 0
+    },
+    {
+      "source": "HeadInjury",
+      "kind": "onehot",
+      "category": 1
+    },
+    {
+      "source": "Hypertension",
+      "kind": "onehot",
+      "category": 0
+    },
+    {
+      "source": "Hypertension",
+      "kind": "onehot",
+      "category": 1
+    },
+    {
+      "source": "MemoryComplaints",
+      "kind": "onehot",
+      "category": 0
+    },
+    {
+      "source": "MemoryComplaints",
+      "kind": "onehot",
+      "category": 1
+    },
+    {
+      "source": "BehavioralProblems",
+      "kind": "onehot",
+      "category": 0
+    },
+    {
+      "source": "BehavioralProblems",
+      "kind": "onehot",
+      "category": 1
+    },
+    {
+      "source": "Confusion",
+      "kind": "onehot",
+      "category": 0
+    },
+    {
+      "source": "Confusion",
+      "kind": "onehot",
+      "category": 1
+    },
+    {
+      "source": "Disorientation",
+      "kind": "onehot",
+      "category": 0
+    },
+    {
+      "source": "Disorientation",
+      "kind": "onehot",
+      "category": 1
+    },
+    {
+      "source": "PersonalityChanges",
+      "kind": "onehot",
+      "category": 0
+    },
+    {
+      "source": "PersonalityChanges",
+      "kind": "onehot",
+      "category": 1
+    },
+    {
+      "source": "DifficultyCompletingTasks",
+      "kind": "onehot",
+      "category": 0
+    },
+    {
+      "source": "DifficultyCompletingTasks",
+      "kind": "onehot",
+      "category": 1
+    },
+    {
+      "source": "Forgetfulness",
+      "kind": "onehot",
+      "category": 0
+    },
+    {
+      "source": "Forgetfulness",
+      "kind": "onehot",
+      "category": 1
+    }
+  ],
+  "preproc_version": "v1",
+  "trained_on": "2025-10-22"
+}

@@ -1,18 +1,190 @@
-body {
-  margin: 0;
+body{
+  width: auto;
+  
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #d3d2da;
+  background-color: #e5e5e5;
+}
+body, html {
+margin: 0;
+  padding: 0;
 }
 
-/* Styles for screens smaller than 480px (e.g., small phones) */
-@media (max-width: 480px) {
-  /* body {
-    font-size: 14px;
-  } */
+
+ #animatedText {
+      font-size: 1.2em;
+      white-space: pre-wrap;
+      font-family: sans-serif;
+    }
+    #skipBtn {
+      margin-top: 10px;
+      padding: 6px 12px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+.animated-goals {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.animated-goals li {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+#nav_buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+#nav_buttons > button {
+  padding: 10px;
+  margin: 10px;
+  width: 100px;
+  font-size: 1em;
+  z-index: 8;
+  background-color: #ffffff79;
+  border: #00000033 solid 2px;
+  cursor: pointer;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#x {
+  padding: 0px;
+  margin: 0px;
+  width: 200px;
+  font-size: 1em;
+  z-index: 8;
+  background-color: #ffffff79;
+  border: #00000033 solid 2px;
+  border-radius: 10px;
+}
+
+input, select {
+  padding: 10px;
+  margin: 50px;
+  width: 200px;
+  font-size: 1em;
+  z-index: 8;
+  background-color: #ffffff79;
+  border: #00000033 solid 2px;
+  border-radius: 10px;
+
+}
+
+/* th {
+width: 150px;
+height: 50px;
+} */
+
+
+#predictForm {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  justify-content: center;
+}
+
+table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  z-index: 7;
+}
+
+thead {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+} 
+
+ table > thead > th > button {
+  cursor: pointer;
+  background-color: #060c66d6;
+  border-radius: 20px;
+  font-size: 1em;
+  width: 100%;
+  height: 60px;
+  z-index: 6;
+  padding: 12px;
+  color: white;
+    font-weight: bold;
+
+
+}
+
+ table > thead > th > button:hover {
+  cursor: pointer;
+  background-color: #090e9ef9;
+}
+
+
+
+
+/* #expander {
+  display: absolute;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #f0f03279;
+  font-weight: bold;
+  z-index: 6;
+} */
+
+
+
+label
+  {
+    margin-right: 10px;
+    font-size: 1em;
+    z-index: 5;
+    background-color: #f0f03279;
+    font-weight: bold;
+  }
+
+button.active {
+  background-color: #00ff00;
+}
+
+button.active:hover {
+  background-color: #12dc0098;
+}
+
+
+/* thead th:nth-child(5) button {background-color: red;} */
+
+
+.animated-goals li:nth-child(1) { --i: 1; }
+.animated-goals li:nth-child(2) { --i: 2; }
+.animated-goals li:nth-child(3) { --i: 3; }
+.animated-goals li:nth-child(4) { --i: 4; }
+.animated-goals li:nth-child(5) { --i: 5; }
+.animated-goals li:nth-child(6) { --i: 6; }
+.animated-goals li:nth-child(7) { --i: 7; }
+.animated-goals li:nth-child(8) { --i: 8; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .path_style {
@@ -20,9 +192,11 @@ body {
         font-family: 'Courier New', Courier, monospace;
         font-size: x-large;
         position: absolute;
+        height: auto;
         margin-top: 60px;
         margin-bottom: 60px;
         z-index: 3;
+        left: 0px;
         align-items: center;
 }
 
@@ -35,12 +209,15 @@ body {
 }   
 
 header {
+  margin: 0;
+  padding: 0;
   position: relative;
-  background-color: #0000006c;
+  background-color: #818181d7;
   width: 100%;
   height: 160px;
   z-index: 1;
-  top:0px;
+  display: flex;
+  justify-content: center;
 }
 
 .nav_design {
@@ -54,17 +231,36 @@ header {
   opacity: 1.0;
 }
 
-.nav_layout {
-  position: absolute;
+#title {
+  background-color: #ffffff6d;
+}
+
+#correlationChart {
+  background-color: #ffffff6d;
+  border-radius: 15px;
+}
+
+#addt_back {
+  background-image: linear-gradient(to right, #ff6200, #ffd700); /* orange to gold */
+  background-color: transparent;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+
+#nav_layout {
   display: flex;
+  flex-grow: 0;
   text-decoration: none;
   font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
+  font-size: medium;
   font-style: italic;
   justify-content: space-around;
-  width: 40%;
+  width: 670px;
   top: 45px;
-  left: 400px;
+  margin: auto;
   padding: 2px;
   z-index: 3; /* Ensure it is above other content */
 }

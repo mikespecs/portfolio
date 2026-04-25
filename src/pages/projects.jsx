@@ -37,7 +37,6 @@ const projects = [
     description: "A mobile app about solving oronym riddles",
     tech: "Microstudio",
     features: ["Riddle challenges", "Hint system", "Leaderboard"],
-    github: "N/A",
     img_src: Oronym,
     demo: "N/A",
     role: "Solo developer",
@@ -50,7 +49,6 @@ const projects = [
     description: "A mobile game about a mech suit",
     tech: "Microstudio",
     features: ["3D graphics", "Physics-based gameplay", "Multiple levels"],
-    github: "N/A",
     img_src: exosuit,
     demo: "https://flightpath-demo.vercel.app",
     role: "Solo developer",
@@ -63,7 +61,6 @@ const projects = [
     description: "Distributing",
     tech: "React, Leaflet, Firebase",
     features: ["PDF generation", "User authentication", "Data visualization"],
-    github: "N/A",
     img_src: Tru,
     demo: "N/A",
     role: "Solo developer",
@@ -76,7 +73,6 @@ const projects = [
     description: "Non Profit Raffle Hub",
     tech: "React, Leaflet, Firebase",
     features: ["Raffle management", "Payment integration", "User profiles"],
-    github: "https://ourdraw-production.vercel.app",
     img_src: Ourdraw,
     demo: "https://flightpath-demo.vercel.app",
     role: "Solo developer",
@@ -128,7 +124,6 @@ const [videoSrc, setVideoSrc] = useState(dragon);
           <p><strong>Role:</strong> {proj.role}</p>
           <p><strong>Challenges:</strong> {proj.challenges}</p>
           <p><strong>Future:</strong> {proj.future}</p>
-          <a href={proj.github} >GitHub</a>
           <a href={proj.demo} >Live Demo</a>
         </div>
       ))}
